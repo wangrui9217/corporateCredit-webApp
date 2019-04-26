@@ -1,0 +1,15 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "priority": 0,
+    "resources": [
+      "static/js/manifest.e6b67ba11ddfc65976ef.js",
+      "static/js/vendor.6d876f6eb4658e214c6c.js",
+      "static/js/app.05c59990d207e41850c0.js",
+      "static/css/app.07142b2319c61dd164fdc015296f3481.css",
+      "static/js/app.16663c2b9b60c937de01.js",
+      "static/js/manifest.8de25a975157cd7b5df4.js"
+    ],
+    "refer": []
+  }
+}

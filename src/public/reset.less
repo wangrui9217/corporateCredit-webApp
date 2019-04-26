@@ -1,0 +1,195 @@
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+维护：levo(rainlevo0819@gmail.com)
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+/*html { overflow-y: scroll; }*/
+body{
+    font-family: PingFang-SC-Regular,"Microsoft YaHei", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    color:#333;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0;
+    padding:0;
+    border:none;
+    list-style:none;
+}
+*{
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  box-sizing:border-box;
+}
+a{text-decoration:none;color:#333;}
+a:hover,a:focus{text-decoration: none;}
+
+img{vertical-align:middle;}
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+    border: none;
+    outline: none;
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+// 公共类
+.color-333 {
+  color: #333;
+}
+.color-666 {
+  color: #666;
+}
+.color-999 {
+  color: #999;
+}
+.color-ccc {
+  color: #ccc;
+}
+.color-ddd {
+  color: #ddd;
+}
+.color-disable {
+  color: #dcdfe6;
+}
+.color-blue {
+  color: #3377ff;
+}
+.color-red {
+  color: #ff4c4c;
+}
+.color-orange {
+  color: #ff944d;
+}
+.color-green {
+  color: #4bbe71;
+}
+.color-e5e5e5 {
+  color: #e5e5e5;
+}
+.color-fff {
+  color: #fff;
+}
+.bgcolor-eee {
+  background-color: #eee;
+}
+
+.font20 {
+  font-size: 20px/2;
+  line-height: 32px/2;
+}
+.font24 {
+  font-size: 24px/2;
+  line-height: 38px/2;
+}
+.font26 {
+  font-size: 26px/2;
+  line-height: 40px/2;
+}
+.font28 {
+  font-size: 28px/2;
+  line-height: 44px/2;
+}
+.font30 {
+  font-size: 30px/2;
+  line-height: 46px/2;
+}
+.font32 {
+  font-size: 32px/2;
+  line-height: 52px/2;
+}
+.font34 {
+  font-size: 34px/2;
+  line-height: 54px/2;
+}
+.font36 {
+  font-size: 36px/2;
+  line-height: 56px/2;
+}
+.font38 {
+  font-size: 38px/2;
+}
+.font40 {
+  font-size: 40px/2;
+}
+
+input::-webkit-input-placeholder{ /*WebKit browsers*/
+  color: #ccc;
+}
+
+input::-ms-input-placeholder{ /*Internet Explorer*/
+  color: #ccc;
+}
+
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.common-field .mint-field-core {
+  text-align: right;
+  font-size: 30px/2;
+  color: #333333;
+}
+.font-bold{
+  margin: 0;
+  padding: 0;
+  font-family:"PingFang-SC-bold";
+  box-sizing: border-box;
+}
+
+// 禁用长按选中文本功能
+body {
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}

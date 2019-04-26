@@ -1,0 +1,87 @@
+@import "./comment";
+
+@font-face
+{
+  font-family: PingFang-SC-Medium;
+  src: url('./font/PingFangMedium-downcc.otf'),
+}
+@font-face
+{
+  font-family: PingFang-SC-Regular;
+  src: url('./font/PingFang-Regular.otf'),
+}
+
+
+
+.mu-checkbox-icon-checked{
+  color: @lightBlue !important;
+}
+.mu-checkbox-icon-uncheck{
+  color: @lightBlue !important;
+}
+.mint-cell-box{
+  .mint-cell.mint-field{
+    height: 104px/2;
+    margin-bottom: 2px/2;
+  }
+  .mint-cell.mint-field.is-textarea{
+    height: auto;
+    margin-bottom: 2px/2;
+  }
+}
+
+.mint-navbar.common-navbar{
+  border-bottom: 4px/2 solid #eee;
+  .mint-tab-item.is-selected{
+    position: relative;
+    border-bottom: none;
+    .mint-tab-item-label{
+      color: @lightBlue;
+    }
+  }
+  .mint-tab-item.is-selected:after{
+    position: absolute;
+    width: 32px/2;
+    height: 6px/2;
+    background-color: @lightBlue;
+    border-radius: 3px/2;
+    content: '';
+    left: 50%;
+    bottom: 3px;
+    transform: translateX(-50%);
+  }
+  .mint-tab-item-label{
+    font-size: 32px/2;
+    color: #666666;
+  }
+}
+
+.museui-setting{
+   .mu-text-field{
+     width: 100%;
+   }
+   .mu-text-field.focus-state{
+     color: rgba(102, 102, 102, 1);
+   }
+   .mu-text-field-focus-line{
+     background-color: @lightBlue;
+   }
+   .mu-text-field-line{
+     background-color: #fff;
+   }
+ }
+
+.museui-setting-login{
+  .mu-text-field{
+    width: 100%;
+  }
+  .mu-text-field.focus-state{
+    color: rgba(102, 102, 102, 1);
+  }
+  .mu-text-field-focus-line{
+    background-color: @lightBlue;
+  }
+  //.mu-text-field-line{
+  //  background-color: #fff;
+  //}
+}
